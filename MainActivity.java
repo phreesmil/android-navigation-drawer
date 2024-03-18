@@ -17,7 +17,6 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
-	private String[] drawerListViewItems;
     private DrawerLayout drawerLayout;
     private ListView drawerListView;
     private ActionBarDrawerToggle actionBarDrawerToggle;
@@ -28,12 +27,9 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		// get list items from strings.xml
 		drawerListViewItems = getResources().getStringArray(R.array.items);
-		// get ListView defined in activity_main.xml
 		drawerListView = (ListView) findViewById(R.id.left_drawer);
 
-        // Set the adapter for the list view
 		drawerListView.setAdapter(new ArrayAdapter<String>(this,
                 R.layout.drawer_listview_item, drawerListViewItems));
       
