@@ -1,2 +1,2 @@
 # android-navigation-drawer
-android negivation example
+android negivation
